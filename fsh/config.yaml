@@ -1,0 +1,28 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: generic-yellowfever-ig
+canonical: https://w3.id/vaccination/fhir/generic/yellowfever
+name: GenericYellowfeverIG
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2021+
+releaseLabel: ci-build
+
+dependencies:
+  hl7.fhir.us.core: 3.1.0
+  hl7.fhir.uv.ips: 1.0.0
+
+# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
+# │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+template: fhir.base.template#current
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Artifacts: artifacts.html

@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.163.1/containers/jekyll
+{
+	"name": "Generic Yellow Fever IG based on WHO IPS (International Patient Summary)",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "fshigp",
+	"workspaceFolder": "/workspaces/generic-yellowfever-ig",
+	// "build": {
+	// 	"dockerfile": "Dockerfile",
+	// 	"args": {
+	// 		// Enable Node.js: pick the latest LTS version
+	// 		"NODE_VERSION": "lts/*"
+	// 	}	
+	// },
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"kmahalingam.vscode-language-fsh"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		// Jekyll server
+		4000,
+		// Live reload server
+		35729
+	],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "sh .devcontainer/post-create.sh",
+	"postCreateCommand": "echo -e \"y\ny\ny\" | ./_updatePublisher.sh",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
