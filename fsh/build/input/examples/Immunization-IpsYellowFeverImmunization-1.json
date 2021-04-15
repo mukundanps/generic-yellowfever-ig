@@ -1,13 +1,13 @@
 {
   "resourceType": "Immunization",
-  "id": "US-ExampleIpsYellowFeverImmunization-1",
+  "id": "IpsYellowFeverImmunization-1",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
     ]
   },
   "patient": {
-    "reference": "CdcCvrsPatientExample1"
+    "reference": "Patient/IpsPatientExample1"
   },
   "identifier": [
     {
@@ -19,8 +19,8 @@
   "vaccineCode": {
     "coding": [
       {
-        "code": "J07BX03",
-        "system": "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"
+        "code": "56844000",
+        "system": "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"
       }
     ]
   },
@@ -28,7 +28,7 @@
   "protocolApplied": [
     {
       "doseNumberPositiveInt": 1,
-      "seriesDosesPositiveInt": 2
+      "seriesDosesPositiveInt": 1
     }
   ],
   "lotNumber": "B235D",

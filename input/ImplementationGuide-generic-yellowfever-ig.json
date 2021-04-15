@@ -57,10 +57,6 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
-      },
-      {
-        "code": "show-inherited-invariants",
-        "value": "false"
       }
     ]
   }

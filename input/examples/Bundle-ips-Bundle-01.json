@@ -1,0 +1,39 @@
+{
+  "resourceType": "Bundle",
+  "id": "ips-Bundle-01",
+  "identifier": {
+    "system": "http://hl7.eu/fhir/sid/uvci",
+    "value": "V1IT454557891308174803488707671418",
+    "period": {
+      "start": "2021-02-10"
+    }
+  },
+  "type": "document",
+  "timestamp": "2021-02-10T14:30:00+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"
+    },
+    {
+      "fullUrl": "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+    },
+    {
+      "fullUrl": "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6"
+    },
+    {
+      "fullUrl": "urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"
+    },
+    {
+      "fullUrl": "urn:uuid:b66c1b23-21e9-4bd0-9cd7-edd806c126de"
+    },
+    {
+      "fullUrl": "urn:uuid:d7a490a1-d267-4785-ac98-db56748827fb"
+    },
+    {
+      "fullUrl": "urn:uuid:42befbaf-eba8-44ec-b7d6-0e4a996e0760"
+    },
+    {
+      "fullUrl": "urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"
+    }
+  ]
+}

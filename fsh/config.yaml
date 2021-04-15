@@ -12,9 +12,9 @@ copyrightYear: 2021+
 releaseLabel: ci-build
 
 dependencies:
-  hl7.fhir.us.core: 3.1.0
   hl7.fhir.uv.ips: 1.0.0
-
+parameters:
+  show-inherited-invariants: false
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -26,3 +26,5 @@ template: fhir.base.template#current
 menu:
   Home: index.html
   Artifacts: artifacts.html
+
+FHSOnly: true
