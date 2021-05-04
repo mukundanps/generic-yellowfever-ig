@@ -1,4 +1,4 @@
-Instance: ips-Bundle-01
+Instance: ghp-vaxcert-labtest-recovery
 InstanceOf: Bundle
 Usage: #example
 
@@ -20,6 +20,14 @@ Usage: #example
 * entry[6].resource = Inline-Instance-for-ips-Bundle-01-7
 * entry[7].fullUrl = "urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"
 * entry[7].resource = Inline-Instance-for-ips-Bundle-01-8
+* entry[8].fullUrl = "urn:uuid:325caef4-bd65-481b-927e-55eb0353ca90"
+* entry[8].resource = Inline-Instance-for-ips-Bundle-01-9
+* entry[9].fullUrl = "urn:uuid:1d3bc2de-1fa4-4680-b605-b6d866059898"
+* entry[9].resource = Inline-Instance-for-ips-Bundle-01-10
+* entry[10].fullUrl = "urn:uuid:b9b21937-d440-4298-b228-62d78542feeb"
+* entry[10].resource = Inline-Instance-for-ips-Bundle-01-11
+* entry[11].fullUrl = "urn:uuid:fb47f786-50d5-43b3-9534-a2f2ac176179"
+* entry[11].resource = Inline-Instance-for-ips-Bundle-01-12
 
 
 Instance: Inline-Instance-for-ips-Bundle-01-1
@@ -38,11 +46,18 @@ Usage: #inline
 * attester[0].time = "2020-12-27T14:30:00+01:00"
 * attester[0].party.reference = "urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" //change from organziation t
 * custodian.reference = "urn:uuid:b66c1b23-21e9-4bd0-9cd7-edd806c126de"
+
 * section[0].title = "Vaccinations"
 * section[0].code = LOINC#11369-6 "Hx of Immunization"
 * section[0].text.status = #generated
 * section[0].text.div = "<div>Nothing here</div>"
 * section[0].entry[0].reference = "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6" 
+
+* section[1].title = "Laboratory Test"
+* section[1].code = LOINC#19146-0 "Reference lab test panel"
+* section[1].text.status = #generated
+* section[1].text.div = "<div>Nothing here</div>"
+* section[1].entry[0].reference = "urn:uuid:1d3bc2de-1fa4-4680-b605-b6d866059898" 
 
 Instance: Inline-Instance-for-ips-Bundle-01-2
 InstanceOf: PatientUvIps
@@ -128,3 +143,40 @@ Usage: #inline
 * name = "AZ. OSPEDALIERO - UNIVERSITARIA CAREGGI"
 * address.city = "Firenze"
 * address.country = "IT"
+
+Instance: Inline-Instance-for-ips-Bundle-01-9
+InstanceOf: ObservationResultsLaboratoryUvIps
+Usage: #inline
+* id = "325caef4-bd65-481b-927e-55eb0353ca90"
+* code = LOINC#94558-4
+* performer.reference = "d7a490a1-d267-4785-ac98-db56748827fb"
+* subject.reference = "2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+* effectiveDateTime = "2021-05-01T14:30:00+01:00"
+
+Instance: Inline-Instance-for-ips-Bundle-01-10
+InstanceOf: DiagnosticReport
+Usage: #inline
+* id = "1d3bc2de-1fa4-4680-b605-b6d866059898"
+* code = LOINC#19146-0
+* status = SCT#260373001
+* result.reference = "325caef4-bd65-481b-927e-55eb0353ca90"
+
+Instance: Inline-Instance-for-ips-Bundle-01-11
+InstanceOf: ObservationResultsLaboratoryUvIps
+Usage: #inline
+* id = "f96ad986-b5b4-42b6-b8b2-3e4b6c3b166d"
+* code = LOINC#LP6464-4
+* performer.reference = "d7a490a1-d267-4785-ac98-db56748827fb"
+* subject.reference = "2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+* effectiveDateTime = "2021-05-04T14:30:00+01:00"
+
+Instance: Inline-Instance-for-ips-Bundle-01-12
+InstanceOf: DiagnosticReport
+Usage: #inline
+* id = "fb47f786-50d5-43b3-9534-a2f2ac176179"
+* code = LOINC#19146-0
+* status = SCT#260373001
+* result.reference = "f96ad986-b5b4-42b6-b8b2-3e4b6c3b166d"
+
+
+

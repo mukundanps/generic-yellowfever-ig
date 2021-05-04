@@ -1,6 +1,6 @@
 {
   "resourceType": "Immunization",
-  "id": "IpsYellowFeverImmunization-1",
+  "id": "IpsYellowFever-1",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"

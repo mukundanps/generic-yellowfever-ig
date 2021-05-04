@@ -21,15 +21,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "Patient/IpsPatientExample1"
-        },
-        "name": "IpsPatientExample1",
-        "description": "Example CDC Covid-19 vaccination bundle",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Immunization/IpsYellowFeverImmunization-1"
+          "reference": "Immunization/IpsYellowFever-1"
         },
         "name": "IpsYellowFeverImmunization Example",
         "description": "An example instance of IPS Immunization profile",
@@ -37,9 +29,9 @@
       },
       {
         "reference": {
-          "reference": "Bundle/ips-Bundle-01"
+          "reference": "Bundle/ghp-vaxcert"
         },
-        "name": "ips-Bundle-01",
+        "name": "ghp-vaxcert",
         "exampleBoolean": true
       }
     ],
@@ -57,6 +49,10 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
       }
     ]
   }

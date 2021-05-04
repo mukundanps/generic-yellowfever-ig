@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "ips-Bundle-01",
+  "id": "ghp-vaxcert",
   "type": "document",
   "timestamp": "2021-02-10T14:30:00+01:00",
   "entry": [
@@ -64,6 +64,27 @@
             "entry": [
               {
                 "reference": "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6"
+              }
+            ]
+          },
+          {
+            "title": "Laboratory Test",
+            "code": {
+              "coding": [
+                {
+                  "code": "19146-0",
+                  "system": "http://loinc.org",
+                  "display": "Reference lab test panel"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div>Nothing here</div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:1d3bc2de-1fa4-4680-b605-b6d866059898"
               }
             ]
           }

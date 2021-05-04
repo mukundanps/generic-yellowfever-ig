@@ -3,7 +3,7 @@
 Instance: IpsPatientExample1
 InstanceOf: PatientUvIps
 Description: "Example CDC Covid-19 vaccination bundle"
-Usage: #example
+Usage: #inline
 
 * id = "IpsPatientExample1"
 //recip_id
@@ -42,14 +42,14 @@ Usage: #inline
 * identifier.system = "http://example.org/fhir/sid/us-npi"
 * identifier.value = "1588640692"
 
-Instance: US-ExampleIpsYellowFeverImmunization-1
+Instance: US-ExampleIpsYellowFever-1
 InstanceOf: ImmunizationUvIps
 Usage: #example
 Title: "IpsYellowFeverImmunization Example"
 Description: "An example instance of IPS Immunization profile"
 
 * patient = Reference(IpsPatientExample1) // this automatically creates the relative reference correctly
-* id = "IpsYellowFeverImmunization-1"
+* id = "IpsYellowFever-1"
 //vax_event_id
 * identifier.value = "568971356"
 //* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
