@@ -1,0 +1,23 @@
+{
+  "name": "generic-yellowfever-ig",
+  "version": "0.1.0",
+  "description": "FHIR IG for WHO IPS based profiles in support of GHP",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SemanticClarity/generic-vax-test-recovery-ig.git"
+  },
+  "keywords": [
+    "FHIR",
+    "IG"
+  ],
+  "author": "Mukundan Parthasarathy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SemanticClarity/generic-vax-test-recovery-ig/issues"
+  },
+  "homepage": "https://github.com/SemanticClarity/generic-vax-test-recovery-ig#readme"
+}
